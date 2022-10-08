@@ -1,6 +1,6 @@
 # About
 
-Add some information about your project here.
+http://catroniq.com
 
 # Installation
 
