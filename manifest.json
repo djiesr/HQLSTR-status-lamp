@@ -8,7 +8,7 @@
       "chipFamily": "ESP8266",
       "parts": [
         {
-          "path": "status-lamp-2-esp8266/status-lamp-2-esp8266.bin",
+          "path": "status-lamp-esp8266/status-lamp-esp8266.bin",
           "offset": 0
         }
       ]
