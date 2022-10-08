@@ -1,4 +1,4 @@
-# ESPHome Project Template
+# Status Lamp for ESPHome
 
 This repo serves as a template for creating a new ESPHome project.
 
