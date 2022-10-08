@@ -1,5 +1,5 @@
 {
-  "name": "Status Lamp 2",
+  "name": "Status Lamp",
   "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
