@@ -1,6 +1,6 @@
 # About
 
-http://catroniq.com 2
+<a href="https://catroniq.com/led-state/">Catroniq Status Lamp website</a>
 
 # Installation
 
