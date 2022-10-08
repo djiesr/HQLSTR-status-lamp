@@ -61,8 +61,8 @@ light:
     id: ledstrip1
     type: GRB
     variant: WS2811
-    pin: GPIO02
-    num_leds: 3
+    pin: GPIO03
+    num_leds: 4
     name: "Status-Lamp"
     effects:
       - addressable_color_wipe:
