@@ -12,7 +12,7 @@ esphome:
   # configuration and updates.
   project:
     name: esphome.status-lamp
-    version: "1.1"
+    version: "1.11"
 
 esp8266:
   board: esp01_1m
@@ -53,7 +53,7 @@ captive_portal:
 
 # Sets up the improv via serial client for Wi-Fi provisioning.
 # Handy if your device has a usb port for the user to add credentials when they first get it.
-improv_serial:
+#improv_serial:
 
 
 light:
