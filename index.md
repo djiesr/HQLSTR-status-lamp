@@ -1,6 +1,6 @@
 # About
 
-http://catroniq.com
+http://catroniq.com 2
 
 # Installation
 
