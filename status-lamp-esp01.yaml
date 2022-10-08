@@ -1,6 +1,6 @@
 # These substitutions allow the end user to override certain values
 substitutions:
-  name: "project-template"
+  name: "status-lamp"
 
 esphome:
   name: "${name}"
@@ -11,8 +11,8 @@ esphome:
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: esphome.project-template
-    version: "1.0"
+    name: esphome.status-lamp
+    version: "1.1"
 
 esp8266:
   board: esp01_1m
@@ -28,7 +28,7 @@ ota:
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: github://esphome/esphome-project-template/project-template-esp32.yaml@main
+  package_import_url: github://djiesr/HQLSTR-status-lamp/status-lamp-esp01.yaml@main
 
 wifi:
   # Set up a wifi access point using the device name above
@@ -61,9 +61,9 @@ light:
     id: ledstrip1
     type: GRB
     variant: WS2811
-    pin: GPIO00
+    pin: GPIO02
     num_leds: 3
-    name: "Hydro-Pixel"
+    name: "Status-Lamp"
     effects:
       - addressable_color_wipe:
           name: Color Wipe Effect With Custom Values
@@ -79,24 +79,31 @@ light:
           add_led_interval: 100ms
           reverse: false
   - platform: partition
-    name: "Light 1"
+    name: "Led 1"
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 0
         to: 0
   - platform: partition
-    name: "Light 2"
+    name: "Led 2"
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 1
         to: 1
   - platform: partition
-    name: "Light 3"
+    name: "Led 3"
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 2
         to: 2
+  - platform: partition
+    name: "Led 4"
+    segments:
+      # Use first 10 LEDs from the light with ID light1
+      - id: ledstrip1
+        from: 3
+        to: 3
         
