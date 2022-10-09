@@ -1,6 +1,7 @@
 # These substitutions allow the end user to override certain values
 substitutions:
   name: "status-lamp"
+  test: ""
 
 esphome:
   name: "${name}"
@@ -52,7 +53,7 @@ light:
     variant: WS2811
     pin: GPIO03
     num_leds: 5
-    name: "Status-Lamp"
+    name: "Status-Lamp-${test}"
     effects:
       - addressable_color_wipe:
           name: Color Wipe Effect With Custom Values
