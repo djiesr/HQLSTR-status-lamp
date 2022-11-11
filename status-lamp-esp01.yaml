@@ -12,7 +12,7 @@ esphome:
   # configuration and updates.
   project:
     name: esphome.status-lamp
-    version: "1.13.2"
+    version: "1.14.1"
 
 esp8266:
   board: esp01_1m
@@ -68,84 +68,84 @@ light:
           add_led_interval: 200ms
           reverse: false
   - platform: partition
-    name: "Led 1"
+    name: $name 01
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 0
         to: 0
   - platform: partition
-    name: "Led 2"
+    name: $name 02
     segments:
       # Use first 10 LEDs from the light with ID light5
       - id: ledstrip1
         from: 1
         to: 1
   - platform: partition
-    name: "Led 3"
+    name: $name 03
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 2
         to: 2
   - platform: partition
-    name: "Led 4"
+    name: $name 04
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 3
         to: 3
   - platform: partition
-    name: "Led 5"
+    name: $name 05
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 4
         to: 4
   - platform: partition
-    name: "Led 6"
+    name: $name 06
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 5
         to: 5
   - platform: partition
-    name: "Led 7"
+    name: $name 07
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 6
         to: 6
   - platform: partition
-    name: "Led 8"
+    name: $name 08
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 7
         to: 7
   - platform: partition
-    name: "Led 9"
+    name: $name 09
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
-        from: 8
+        from: 08
         to: 8
   - platform: partition
-    name: "Led 10"
+    name: $name 10
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 9
         to: 9
   - platform: partition
-    name: "Led 11"
+    name: $name 11
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
         from: 10
         to: 10
   - platform: partition
-    name: "Led 12"
+    name: $name 12
     segments:
       # Use first 10 LEDs from the light with ID light1
       - id: ledstrip1
