@@ -1,21 +1,14 @@
-# Status Lamp for ESPHome
+# Catroniq - Lampe de statut (HQLSTR)
 
-This repo serves as a template for creating a new ESPHome project.
+Firmware [ESPHome](https://esphome.io/) de la [lampe de statut Catroniq](https://catroniq.com/kits/lampe-de-statut/) : un ESP-01 qui pilote 12 DEL WS2811, chacune contrôlable dans Home Assistant.
 
-It includes a GitHub workflow that will automatically build the configuration(s) and then deploys a simple 
-website via GitHub pages that utilises [ESP Web Tools](https://esphome.github.io/esp-web-tools/) for users to 
-easily install your project onto their device.
+## Installation
 
-## Instructions
+- **Depuis le navigateur** : https://djiesr.github.io/HQLSTR-status-lamp/ (Chrome ou Edge, ESP-01 sur un programmeur USB).
+- **Avec ESPHome** : adoptez l'appareil dans le tableau de bord, ou copiez [`status-lamp-esp01.yaml`](status-lamp-esp01.yaml).
 
-1. Use this repo template to [generate](https://github.com/esphome/esphome-project-template/generate) your own repository.
-   - Make sure to check `Include all branches` so that GitHub Pages is automatically enabled.
-2. Clone your new repository.
-3. Add your project specific YAML configuration(s) along with the contents of the `project-template-....yaml` files, taking note of the comments in this template file and name accordingly.
-4. 
-    a. Update [.github/workflows/publish.yml](.github/workflows/publish.yml) to contain your own YAML config filename(s).
-    b. Update [.github/workflows/ci.yml](.github/workflows/ci.yml) to contain your own YAML config filename(s).
-5. Update [static/_config.yml](static/_config.yml) to change the title, description and basic theme of the generated website.
-6. Add more content to the [static/index.md](static/index.md) file to explain your project.
-    Make sure to leave the installation code tags in place so users get the install button.
-7. Push your changes to the repository and GitHub Actions will automatically build and deploy your project.
+## Publication
+
+Chaque push sur `main` compile le firmware et met à jour la page d'installation (branche `gh-pages`). Pensez à augmenter `project.version` dans le YAML avant de pousser.
+
+La mise à jour automatique depuis Home Assistant (`update: http_request`) n'est pas incluse : avec le client HTTPS, le firmware dépasse la moitié de la mémoire d'un ESP-01 de 1 Mo et ne pourrait plus se mettre à jour par Wi-Fi.

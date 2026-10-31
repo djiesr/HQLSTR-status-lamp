@@ -1,4 +1,3 @@
-# CHANGEME: Set these variable to your liking
-title: Status lamp
-description: Powered by ESPHome and ESP Web Tools
+title: Catroniq - Lampe de statut
+description: Propulsé par ESPHome et ESP Web Tools
 theme: jekyll-theme-slate
